@@ -1,0 +1,43 @@
+/* List */
+l = [1,2,3]
+l.add(4);
+l << 5
+l = l+[8,9,10]
+l= l-[0]
+println l
+
+l.each{ println it}
+l.each{ element ->  println element}
+
+
+println l.class
+ll = [4,5] as LinkedList
+print ll
+println ll.class
+LinkedList li =[1,2,4]
+println ll.class
+
+/*Set */ 
+s = ["Java", "Python","C"] as Set
+println s.class
+
+/*Map */
+m=[course:"Gradle",rating:"5"]
+m.review="Good"
+m['duration']="4 Hours"
+println m
+println m["course"]
+m.each{k,v ->
+    println "key=$k : value=$v"
+}
+
+/* Methods */
+
+int addNumbers(x,y){
+    x+y;
+}
+
+println addNumbers(1,2)
+
+
+
